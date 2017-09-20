@@ -80,7 +80,7 @@ class Server {
 
    run() {
 
-       this.app.listen(this.port,'localhost',() => {
+       this.app.listen(this.port,'0.0.0.0',() => {
 
            console.log("App running at", this.port);
            this.mongoConnect();
